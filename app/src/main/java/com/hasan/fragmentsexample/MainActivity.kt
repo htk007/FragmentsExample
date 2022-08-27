@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
 
         fragmentManager = supportFragmentManager
         fragmentTransaction = fragmentManager.beginTransaction()
+        //due to this code line , we added first fragment inside to activity main
         fragmentTransaction.add(R.id.mainLayout,firstFragment,"first")
         fragmentTransaction.commit()
 
